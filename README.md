@@ -9,4 +9,6 @@
   <img src="https://skillicons.dev/icons?i=html,css,ts,react,vite" />
 </p>
 
+<img src="./Preview/pic1.png" width="250" /> 
+
 ---

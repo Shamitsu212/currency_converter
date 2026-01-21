@@ -1,10 +1,23 @@
 
+import type { Dispatch, SetStateAction } from 'react';
 import styles from './Input_UI.module.css'
 
-function Input_UI() {
+interface InputProps {
+    value: string;
+    setValue: Dispatch<SetStateAction<string>>
+    disable: boolean
+}
+
+function Input_UI({value, setValue, disable}:InputProps) {
 
   return (
-    <input className={styles.Page}>
+    <input 
+        className={styles.Input}
+        type='number'
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        disabled={disable}
+    >
       
     </input>
   )
